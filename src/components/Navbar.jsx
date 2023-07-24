@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
                 title="Our product"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Product
+                Latest
               </a>
             </li>
             <li>
@@ -25,22 +26,22 @@ const Navbar = () => {
                 title="Our product"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Features
+                Featured
               </a>
             </li>
             <li>
-              <a
-                href="/"
+              <Link
+                to="/about"
                 aria-label="Product pricing"
                 title="Product pricing"
                 class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                Pricing
-              </a>
+                About
+              </Link>
             </li>
           </ul>
-          <a
-            href="/"
+          <Link
+            to="/"
             aria-label="Company"
             title="Company"
             class="inline-flex items-center lg:mx-auto"
@@ -63,7 +64,7 @@ const Navbar = () => {
             <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
               July
             </span>
-          </a>
+          </Link>
           <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
             <li>
               <a
