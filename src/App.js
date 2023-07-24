@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Latest from "./components/Latest";
 import Featured from "./components/Featured";
+import AddNewPost from "./components/AddNewPost";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/latest" element={<Latest></Latest>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/featured" element={<Featured></Featured>}></Route>
+        <Route path="/add-new-post" element={<AddNewPost></AddNewPost>}></Route>
       </Routes>
     </>
   );
