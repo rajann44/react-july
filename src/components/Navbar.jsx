@@ -66,6 +66,11 @@ const Navbar = () => {
             </span>
           </Link>
           <ul class="flex items-center hidden ml-auto space-x-8 lg:flex">
+            <Link to="/add-new-post">
+              <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                <span>Add</span>
+              </button>
+            </Link>
             <li>
               <a
                 href="/"
